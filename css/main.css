@@ -20,6 +20,15 @@ svg {
  	stroke-linejoin: round;
 }
 
+.mission {
+	fill: lightblue;
+}
+
+.mission_text {
+	height: 300px;
+	background-color: lightblue;
+}
+
 .part:hover {
 	opacity: .5;
 	cursor: pointer;
