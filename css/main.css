@@ -16,6 +16,9 @@ svg {
 .part {
 	opacity: .3;
 	fill: white;
+	stroke: darkred;
+ 	stroke-width:10px;
+ 	stroke-linejoin: round;
 }
 
 .part:hover {
