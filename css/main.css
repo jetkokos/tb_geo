@@ -27,18 +27,26 @@ svg {
 	background-color: lightblue;
 	text-align: center;
 }
-.special_mission {
+.mission_with_reqs {
 	fill: blue;
 }
-.special_mission_text {
+.mission_with_reqs_text {
 	background-color: blue;
 	text-align: center;
 }
+.mission_special {
+	fill: darkorange;
+}
+.mission_special_text {
+	background-color: darkorange;
+	text-align: center;
+}
+
 .squad {
-	fill: yellow;
+	fill: darkcyan;
 }
 .squad_text {
-	background-color: yellow;
+	background-color: darkcyan;
 	text-align: center;
 }
 

@@ -18,13 +18,23 @@ $('.mission').hover (
 	}
 )
 
-$('.special_mission').hover (
+$('.mission_with_reqs').hover (
 	function() {
-		$('.special_mission_text').html($(this).attr('special_mission-data'));
-		$('.special_mission_text').fadeIn(1);
+		$('.mission_with_reqs_text').html($(this).attr('mission_with_reqs-data'));
+		$('.mission_with_reqs_text').fadeIn(1);
 	},
 	function() {
-		$('.special_mission_text').fadeOut(1);
+		$('.mission_with_reqs_text').fadeOut(1);
+	}
+)
+
+$('.mission_special').hover (
+	function() {
+		$('.mission_special_text').html($(this).attr('mission_special-data'));
+		$('.mission_special_text').fadeIn(1);
+	},
+	function() {
+		$('.mission_special_text').fadeOut(1);
 	}
 )
 
