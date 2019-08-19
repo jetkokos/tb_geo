@@ -2,8 +2,12 @@ body {margin: 0; padding: 0;}
 
 .map {
 	position: relative;
+	width: 1000px;
+	min-height: 667px;
+	background: url('../media/map_bg.svg') no-repeat 50%;
+	background-size: cover;
 }
-
+/*
 svg {
 	position: absolute;
 	top: 0;
@@ -11,7 +15,7 @@ svg {
 	width: 100%;
 	height: 100%;
 }
-
+*/
 .part {
 	opacity: .3;
 	fill: white;
@@ -19,7 +23,131 @@ svg {
  	stroke-width: 10px;
  	stroke-linejoin: round;
 }
+.part:hover {
+	opacity: .5;
+	cursor: pointer;
+}
 
+.description {
+	display: none;
+	box-sizing: border-box;
+}
+
+.mission {
+	position: absolute;
+	width: 7%;
+	height: 7%;
+}
+.c1 {
+	top: 40%;
+	left: 10%;
+}
+.c2 {
+	top: 25%;
+	left: 20%;
+}
+.c3 {
+	top: 53%;
+	left: 10%;
+}
+.c4 {
+	top: 65%;
+	left: 15%;
+}
+.c5 {
+	top: 23%;
+	left: 33%;
+}
+.c6 {
+	top: 30%;
+	left: 39%;
+}
+.c7 {
+	top: 45%;
+	left: 29%;
+}
+.c8 {
+	top: 51%;
+	left: 36%;
+}
+.c9 {
+	top: 45%;
+	left: 44%;
+}
+.c10 {
+	top: 75%;
+	left: 25%;
+}
+.c11 {
+	top: 75%;
+	left: 45%;
+}
+.c12 {
+	top: 37%;
+	left: 50%;
+}
+.c13 {
+	top: 38%;
+	left: 59%;
+}
+.c14 {
+	top: 52%;
+	left: 53%;
+}
+.c15 {
+	top: 46%;
+	left: 67%;
+}
+.c16 {
+	top: 76%;
+	left: 58%;
+}
+.c17 {
+	top: 66%;
+	left: 62%;
+}
+.c18 {
+	top: 26%;
+	left: 65%;
+}
+.c19 {
+	top: 46%;
+	left: 75%;
+}
+.c20 {
+	top: 54%;
+	left: 79%;
+}
+.c21 {
+	top: 30%;
+	left: 85%;
+}
+.c22 {
+	top: 68%;
+	left: 79%;
+}
+.c23 {
+	top: 76%;
+	left: 85%;
+}
+
+.s1 {
+	top: 62%;
+	left: 4%;
+}
+.s2 {
+	top: 62%;
+	left: 42%;
+}
+.s3 {
+	top: 55%;
+	left: 65%;
+}
+.s4 {
+	top: 65%;
+	left: 92%;
+}
+/*
 .mission {
 	fill: lightblue;
 }
@@ -49,21 +177,8 @@ svg {
 	background-color: darkcyan;
 	text-align: center;
 }
+*/
 
 
 
 
-
-.part:hover {
-	opacity: .5;
-	cursor: pointer;
-}
-
-.description {
-	display: none;
-	box-sizing: border-box;
-}
-
-.description img {
-	margin-bottom: 20px;
-}
