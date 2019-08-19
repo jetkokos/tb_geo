@@ -201,7 +201,8 @@
 						<!--<img class="img-fluid" src="media/map_bg.svg" alt="">-->
 						<img v-on:click="toggle()" class="mission c1" src="media/mission_usual.svg" alt="">
 						<div v-show="seen" class="info">
-							Информация 1
+							<h3>Preferred combat mission teams</h3>
+							<p>{{info[0]}}</p>							
 						</div>
 						<img class="mission c2" src="media/mission_req.svg" alt="">
 						
