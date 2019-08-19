@@ -35,7 +35,6 @@ svg {
 }
 .part:hover {
 	opacity: .5;
-	cursor: pointer;
 }
 
 .description {
@@ -48,6 +47,11 @@ svg {
 	position: absolute;
 	width: 6%;
 	height: 7%;
+	cursor: pointer;
+}
+.mission:hover, .squad:hover {
+	transform: scale(1.3);
+	transition: all 0.5s ease;
 }
 .squad {
 	position: absolute;
@@ -57,14 +61,15 @@ svg {
 }
 .info {
 	position: absolute;
-	bottom: 2%;
-	left: 5%;
+	top: 25%;
+	left: 30%;
 	width: 300px;
-	height: 10%;
+	height: 50%;
 	border: 2px solid blue;
 	z-index: 300;
 	color: darkred;
 	font-weight: bold;
+	background-color: lightgrey;
 }
 .c1 {
 	top: 40%;
