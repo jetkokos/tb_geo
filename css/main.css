@@ -1,10 +1,20 @@
-body {margin: 0; padding: 0;}
-
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+}
+.wrapper {
+	padding: 0;
+	/*max-width: 1400px;*/
+}
 .map {
 	position: relative;
-	width: 1000px;
-	min-height: 667px;
-	background: url('../media/map_bg.svg') no-repeat 50%;
+	width: 70vw;
+	height: auto;
+	background: url('../media/map.jpg') no-repeat 50%;
 	background-size: cover;
 }
 /*
@@ -29,14 +39,32 @@ svg {
 }
 
 .description {
+	position: absolute;
 	display: none;
-	box-sizing: border-box;
+	
 }
 
 .mission {
 	position: absolute;
-	width: 7%;
+	width: 6%;
 	height: 7%;
+}
+.squad {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	
+}
+.info {
+	position: absolute;
+	bottom: 2%;
+	left: 5%;
+	width: 300px;
+	height: 10%;
+	border: 2px solid blue;
+	z-index: 300;
+	color: darkred;
+	font-weight: bold;
 }
 .c1 {
 	top: 40%;
@@ -147,37 +175,52 @@ svg {
 	top: 65%;
 	left: 92%;
 }
-/*
-.mission {
-	fill: lightblue;
+
+.t1 {
+	top: 25%;
+	left: 12%;
 }
-.mission_text {
-	background-color: lightblue;
-	text-align: center;
+.b1 {
+	top: 75%;
+	left: 8%;
 }
-.mission_with_reqs {
-	fill: blue;
+.t2 {
+	top: 25%;
+	left: 46%;
 }
-.mission_with_reqs_text {
-	background-color: blue;
-	text-align: center;
+.m2 {
+	top: 43%;
+	left: 38%;
 }
-.mission_special {
-	fill: darkorange;
+.b2 {
+	top: 65%;
+	left: 34%;
 }
-.mission_special_text {
-	background-color: darkorange;
-	text-align: center;
+.t3 {
+	top: 29%;
+	left: 56%;
+}
+.m3 {
+	top: 51%;
+	left: 62%;
+}
+.b3 {
+	top: 75%;
+	left: 69%;
+}
+.t4 {
+	top: 25%;
+	left: 76%;
+}
+.m4 {
+	top: 42%;
+	left: 86%;
+}
+.b4 {
+	top: 52%;
+	left: 93%;
 }
 
-.squad {
-	fill: darkcyan;
-}
-.squad_text {
-	background-color: darkcyan;
-	text-align: center;
-}
-*/
 
 
 
