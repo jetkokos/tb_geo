@@ -2,12 +2,19 @@ let app = new Vue({
 	el: '#app',
 	data: {
 		seen: false,
-		info: [
+		squads: [
 			'Sith Empire',
 			'First Order',
-			'Bounty Hunters'
-			
-		]
+			'Bounty Hunters',
+			'Emperor Palpatine (zeta)',
+			'Night Sisters',
+			'Triumvirate',
+			'Separatist Droids',
+			'Geonosians'			
+		],
+		fleets: [
+			'Chimera',
+		],
 		
 
 	},
