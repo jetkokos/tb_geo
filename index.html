@@ -199,17 +199,9 @@
 								</a>
 						</svg>
 						<!--<img class="img-fluid" src="media/map_bg.svg" alt="">-->
-						<img v-on:click="toggle()" class="mission c1" src="media/mission_usual.svg" alt="">
-						<div v-show="seen" class="info">
-							<p class="h4">Preferred combat mission teams</p>
-							<p >{{squads[0]}}</p>
-							<p>{{squads[1]}}</p>
-							<p>{{squads[2]}}</p>
-							<p>{{squads[3]}}</p>
-							<p class="h4">Dangerous enemies</p>
-							<p>25% Mace (anti Jango)</p>
-							<p>25% Fives (anti Sion, NS, Wat Tambor)</p>
-						</div>
+						<mission></mission>
+						<mission></mission>
+						
 						<img class="mission c2" src="media/mission_req.svg" alt="">
 						<img class="mission c3" src="media/mission_usual.svg" alt="">
 						<img class="mission c4" src="media/mission_usual.svg" alt="">

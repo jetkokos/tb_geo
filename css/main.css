@@ -22,7 +22,7 @@ body {
 	opacity: .3;
 	opacity: 0.1;
 	stroke: white;
- 	stroke-width: 0.5%;
+ 	stroke-width: 1%;
  	stroke-linejoin: round;
 }
 .part:hover {
