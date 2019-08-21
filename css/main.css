@@ -5,6 +5,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	overflow: hidden;
+	background-color: #6d7487;
 }
 .wrapper {
 	padding: 0;
@@ -12,9 +13,10 @@ body {
 }
 .map {
 	position: relative;
-	width: 70vw;
+	top: -100px;
+	width: 100vw;
 	height: auto;
-	background: url('../media/map.jpg') no-repeat 50%;
+	background: url('../media/map.jpg') no-repeat;
 	background-size: cover;
 }
 
@@ -54,6 +56,8 @@ body {
 }
 .squad_fill {
 	position: absolute;
+	cursor: pointer;
+	width: 5%;
 }
 .squad_fill img {
 	width: 50%;
@@ -212,8 +216,8 @@ body {
 	left: 56%;
 }
 .m3 {
-	top: 51%;
-	left: 62%;
+	top: 50%;
+	left: 59%;
 }
 .b3 {
 	top: 75%;
@@ -235,4 +239,10 @@ body {
 
 
 
-
+/*
+@media (max-width: 1200px) {
+	.map {
+		width: 100vw;
+	}
+}
+*/
