@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="33.480961mm"
+   height="33.480961mm"
+   viewBox="0 0 33.480961 33.480961"
+   version="1.1"
+   id="svg923"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="focus.svg">
+  <defs
+     id="defs917">
+    <linearGradient
+       id="SVGID_1_"
+       gradientUnits="userSpaceOnUse"
+       x1="10.0006"
+       y1="37.9132"
+       x2="125.9797"
+       y2="88.746696">
+      <stop
+         offset="0"
+         style="stop-color:#EE741C"
+         id="stop18" />
+      <stop
+         offset="7.316089e-02"
+         style="stop-color:#EE7C1C"
+         id="stop20" />
+      <stop
+         offset="0.1948"
+         style="stop-color:#ED901C"
+         id="stop22" />
+      <stop
+         offset="0.35"
+         style="stop-color:#EBAE1B"
+         id="stop24" />
+      <stop
+         offset="0.5308"
+         style="stop-color:#E7D017"
+         id="stop26" />
+      <stop
+         offset="0.5954"
+         style="stop-color:#E5DB14"
+         id="stop28" />
+      <stop
+         offset="0.8652"
+         style="stop-color:#E5C506"
+         id="stop30" />
+      <stop
+         offset="0.9944"
+         style="stop-color:#BF7014"
+         id="stop32" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="-50.47936"
+     inkscape:cy="-89.700242"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g37"
+     showgrid="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="988"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata920">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-24.080949,-23.991663)">
+    <g
+       id="g37"
+       transform="matrix(0.26458333,0,0,0.26458333,22.836343,23.983534)">
+      <circle
+         class="st0"
+         cx="68"
+         cy="63.299999"
+         r="58.799999"
+         id="circle16"
+         style="fill:#ffffff;opacity:0" />
+      <linearGradient
+         id="linearGradient913"
+         gradientUnits="userSpaceOnUse"
+         x1="10.0006"
+         y1="37.9132"
+         x2="125.9797"
+         y2="88.746696">
+        <stop
+           offset="0"
+           style="stop-color:#EE741C"
+           id="stop897" />
+        <stop
+           offset="7.316089e-02"
+           style="stop-color:#EE7C1C"
+           id="stop899" />
+        <stop
+           offset="0.1948"
+           style="stop-color:#ED901C"
+           id="stop901" />
+        <stop
+           offset="0.35"
+           style="stop-color:#EBAE1B"
+           id="stop903" />
+        <stop
+           offset="0.5308"
+           style="stop-color:#E7D017"
+           id="stop905" />
+        <stop
+           offset="0.5954"
+           style="stop-color:#E5DB14"
+           id="stop907" />
+        <stop
+           offset="0.8652"
+           style="stop-color:#E5C506"
+           id="stop909" />
+        <stop
+           offset="0.9944"
+           style="stop-color:#BF7014"
+           id="stop911" />
+      </linearGradient>
+      <circle
+         transform="matrix(0.7071,-0.7071,0.7071,0.7071,-24.8671,66.6252)"
+         class="st3"
+         cx="68"
+         cy="63.299999"
+         id="ellipse35"
+         style="fill:none;stroke:url(#SVGID_1_);stroke-width:9;stroke-linecap:square;stroke-miterlimit:10;stroke-dasharray:51.3145, 41.0516"
+         r="58.799999" />
+    </g>
+  </g>
+</svg>
