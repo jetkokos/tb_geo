@@ -199,9 +199,22 @@
 								</a>
 						</svg>
 						<!--<img class="img-fluid" src="media/map_bg.svg" alt="">-->
-						<mission></mission>
-						<mission></mission>
-						
+						<mission
+							v-for="mission in missions"
+							v-bind:class="'mission ' + mission.name"
+							v-bind:key="mission.id"
+						></mission>
+						<mission_special
+							v-for="mission in missions_special"
+							v-bind:class="'mission ' + mission.name"
+							v-bind:key="mission.id"
+						></mission_special>
+						<mission_req
+						v-for="mission in missions_req"
+						v-bind:class="'mission ' + mission.name"
+						v-bind:key="mission.id"
+						></mission_req>
+						<!--
 						<img class="mission c2" src="media/mission_req.svg" alt="">
 						<img class="mission c3" src="media/mission_usual.svg" alt="">
 						<img class="mission c4" src="media/mission_usual.svg" alt="">
@@ -239,7 +252,19 @@
 						<img class="squad t4" src="media/squad.png" alt="">
 						<img class="squad m4" src="media/squad.png" alt="">
 						<img class="squad b4" src="media/squad.png" alt="">
-						<div class="description"></div>
+						-->
+						<div class="description">
+							<div v-show="" class="info">
+								<p class="h4">Preferred combat mission teams</p>
+								<p>{{squads[0]}}</p>
+								<p>{{squads[1]}}</p>
+								<p>{{squads[2]}}</p>
+								<p>{{squads[3]}}</p>
+								<p class="h4">Dangerous enemies</p>
+								<p>25% Mace (anti Jango)</p>
+								<p>25% Fives (anti Sion, NS, Wat Tambor)</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

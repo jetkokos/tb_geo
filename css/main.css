@@ -27,20 +27,26 @@ body {
 }
 .part:hover {
 	opacity: .5;
+	transition: all 0.5s ease;
 	
 }
 
 .description {
+	display:none;
 	position: absolute;
-	display: none;
+	bottom: 10%;
+	right: 10%;
+	background-color: red;
+	width: 300px;
+	height: 100px;
 	
 }
 
 .mission {
 	position: absolute;
-	width: 6%;
-	height: 9%;
+	width: 4%;
 	cursor: pointer;
+	transition: all 0.5s ease;
 }
 .mission:hover, .squad:hover {
 	transform: scale(1.2);
@@ -53,10 +59,10 @@ body {
 	
 }
 .info {
-	position: absolute;
-	bottom: 5%;
-	right: 5%;
-	width: 45%;
+	position: fixed;
+	bottom: -15%;
+	right: -15%;
+	width: 300px;
 	border: 2px solid #3a60aaff;
 	border-radius: 3%;
 	z-index: 300;
@@ -88,18 +94,18 @@ body {
 }
 .c5 {
 	top: 23%;
-	left: 33%;
+	left: 35%;
 }
 .c6 {
 	top: 30%;
-	left: 39%;
+	left: 40%;
 }
 .c7 {
 	top: 45%;
 	left: 29%;
 }
 .c8 {
-	top: 49%;
+	top: 48%;
 	left: 36%;
 }
 .c9 {
@@ -115,8 +121,8 @@ body {
 	left: 45%;
 }
 .c12 {
-	top: 37%;
-	left: 50%;
+	top: 36%;
+	left: 52%;
 }
 .c13 {
 	top: 38%;
@@ -124,19 +130,19 @@ body {
 }
 .c14 {
 	top: 52%;
-	left: 53%;
+	left: 55%;
 }
 .c15 {
 	top: 46%;
 	left: 67%;
 }
 .c16 {
-	top: 76%;
-	left: 58%;
+	top: 74%;
+	left: 59%;
 }
 .c17 {
-	top: 66%;
-	left: 62%;
+	top: 65%;
+	left: 63%;
 }
 .c18 {
 	top: 26%;
@@ -172,8 +178,8 @@ body {
 	left: 42%;
 }
 .s3 {
-	top: 55%;
-	left: 65%;
+	top: 53%;
+	left: 63%;
 }
 .s4 {
 	top: 65%;
