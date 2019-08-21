@@ -210,10 +210,15 @@
 							v-bind:key="mission.id"
 						></mission_special>
 						<mission_req
-						v-for="mission in missions_req"
-						v-bind:class="'mission ' + mission.name"
-						v-bind:key="mission.id"
+							v-for="mission in missions_req"
+							v-bind:class="'mission ' + mission.name"
+							v-bind:key="mission.id"
 						></mission_req>
+						<squad_fill
+							v-for="squad_fill in squad_fills"
+							v-bind:class="'squad_fill ' + squad_fill.name"
+							v-bind:key="squad_fill.id"
+						></squad_fill>
 						<!--
 						<img class="mission c2" src="media/mission_req.svg" alt="">
 						<img class="mission c3" src="media/mission_usual.svg" alt="">

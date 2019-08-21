@@ -48,14 +48,15 @@ body {
 	cursor: pointer;
 	transition: all 0.5s ease;
 }
-.mission:hover, .squad:hover {
+.mission:hover, .squad_fill:hover {
 	transform: scale(1.2);
 	transition: all 0.5s ease;
 }
-.squad {
+.squad_fill {
 	position: absolute;
-	width: 3%;
-	height: 4%;
+}
+.squad_fill img {
+	width: 50%;
 	
 }
 .info {

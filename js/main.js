@@ -1,9 +1,7 @@
 Vue.component('mission', {
 	template: `
 		<div>
-			<div>
 				<img src="media/mission_usual.svg">
-			</div>
 		</div>
 	`,
 	data: function () {
@@ -14,9 +12,7 @@ Vue.component('mission', {
 Vue.component('mission_special', {
 	template: `
 		<div>
-			<div>
-				<img src="media/mission_special.svg">
-			</div>
+			<img src="media/mission_special.svg">
 		</div>
 	`,
 	data: function () {
@@ -27,9 +23,18 @@ Vue.component('mission_special', {
 Vue.component('mission_req', {
 	template: `
 		<div>
-			<div>
-				<img src="media/mission_req.svg">
-			</div>
+			<img src="media/mission_req.svg">
+		</div>
+	`,
+	data: function () {
+	  return {
+	  };
+	}
+});
+Vue.component('squad_fill', {
+	template: `
+		<div>
+			<img src="media/squad.png">
 		</div>
 	`,
 	data: function () {
@@ -73,6 +78,19 @@ let app = new Vue({
 			{id: 1, name: 's2'},
 			{id: 2, name: 's3'},
 			{id: 3, name: 's4'},
+		],
+		squad_fills: [
+			{id: 0, name: 't1'},
+			{id: 1, name: 'b1'},
+			{id: 2, name: 't2'},
+			{id: 3, name: 'm2'},
+			{id: 4, name: 'b2'},
+			{id: 5, name: 't3'},
+			{id: 6, name: 'm3'},
+			{id: 7, name: 'b3'},
+			{id: 8, name: 't4'},
+			{id: 9, name: 'm4'},
+			{id: 10, name: 'b4'},
 		],
 		squads: [
 			'Sith Empire',
