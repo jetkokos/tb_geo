@@ -8,12 +8,17 @@ body {
 	background-color: #6d7487;
 }
 .wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	padding: 0;
+	width: 100vw;
+	height: 100vh;
+
 	/*max-width: 1400px;*/
 }
 .map {
 	position: relative;
-	top: -100px;
 	width: 100vw;
 	height: auto;
 	background: url('../media/map.jpg') no-repeat;
@@ -239,10 +244,9 @@ body {
 
 
 
-/*
-@media (max-width: 1200px) {
+
+@media (min-width: 1700px) {
 	.map {
-		width: 100vw;
+		width: 80vw;
 	}
 }
-*/
