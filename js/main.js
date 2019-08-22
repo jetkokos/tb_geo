@@ -1,42 +1,89 @@
+/* Custom directive for detecting click outside of element */
+Vue.directive('click-outside', {
+	bind: function (el, binding, vnode) {
+	  this.event = function (event) {
+		if (!(el == event.target || el.contains(event.target))) {
+		  vnode.context[binding.expression](event);
+		}
+	  };
+	  document.body.addEventListener('click', this.event)
+	},
+	unbind: function (el) {
+	  document.body.removeEventListener('click', this.event)
+	},
+  });
 Vue.component('mission', {
-	template: `
-			<img class="mission">
-	`,
 	data: function () {
 	  return {
-	  };
-	}
-});
-
-
-let app = new Vue({
-	el: '#app',
-	data: {
-		currentMission: '',
+		squads: [
+			'Sith Empire', 					//0
+			'First Order',					//1
+			'Bounty Hunters',				//2
+			'Emperor Palpatine (zeta)',		//3
+			'Night Sisters',				//4
+			'Triumvirate',					//5
+			'Separatist Droids',			//6
+			'Geonosians'					//7
+		],
+		enemies: [
+			'Mace (anti Jango)',					//0
+			'Fives (anti Sion, NS, Wat Tambor)',	//1
+			'Clone Commander (anti Darth Revan)'	//2
+		],
 		missions: [
-			{id: 0, name: 'c1', type: 'usual', path: 'media/mission_usual.svg'},
-			{id: 1, name: 'c2', type: 'req', path: 'media/mission_req.svg'},
-			{id: 2, name: 'c3', type: 'usual', path: 'media/mission_usual.svg'},
-			{id: 3, name: 'c4', type: 'usual', path: 'media/mission_usual.svg'},
+			{id: 0, name: 'c1', type: 'usual', path: 'media/mission_usual.svg',
+			preferredSquads: [0,1,2,3],
+			dangerousEnemies: [1]},
+			{id: 1, name: 'c2', type: 'req', path: 'media/mission_req.svg',
+			preferredSquads: ['REQUIRED'],
+			dangerousEnemies: [1]},
+			{id: 2, name: 'c3', type: 'usual', path: 'media/mission_usual.svg',
+			preferredSquads: [1,3,4,5],
+			dangerousEnemies: [0, 2]},
+			{id: 3, name: 'c4', type: 'usual', path: 'media/mission_usual.svg',
+			preferredSquads: [1,3,4,5],
+			dangerousEnemies: [0, 2]},
 			{id: 4, name: 'c5', type: 'usual', path: 'media/mission_usual.svg'},
 			{id: 5, name: 'c6', type: 'req', path: 'media/mission_req.svg'}, 
-			{id: 6, name: 'c7', type: 'usual', path: 'media/mission_usual.svg'},
+			{id: 6, name: 'c7', type: 'usual', path: 'media/mission_usual.svg',
+			preferredSquads: [1, 2, 3, 5],
+			dangerousEnemies: [1, 2]},
 			{id: 7, name: 'c8', type: 'req', path: 'media/mission_req.svg'},
-			{id: 8, name: 'c9', type: 'usual', path: 'media/mission_usual.svg'},
-			{id: 9, name: 'c10', type: 'usual', path: 'media/mission_usual.svg'},
-			{id: 10, name: 'c11', type: 'usual', path: 'media/mission_usual.svg'},
+			{id: 8, name: 'c9', type: 'usual', path: 'media/mission_usual.svg',
+			preferredSquads: [1, 2, 3, 5],
+			dangerousEnemies: [1, 2]},
+			{id: 9, name: 'c10', type: 'usual', path: 'media/mission_usual.svg',
+			preferredSquads: [0, 3, 4, 5, 6],
+			dangerousEnemies: [0]},
+			{id: 10, name: 'c11', type: 'usual', path: 'media/mission_usual.svg',
+			preferredSquads: [0, 3, 4, 5, 6],
+			dangerousEnemies: [0]},
 			{id: 11, name: 'c12', type: 'usual', path: 'media/mission_usual.svg'},
 			{id: 12, name: 'c13', type: 'req', path: 'media/mission_req.svg'},
-			{id: 13, name: 'c14', type: 'usual', path: 'media/mission_usual.svg'},
+			{id: 13, name: 'c14', type: 'usual', path: 'media/mission_usual.svg',
+			preferredSquads: [3, 4, 5],
+			dangerousEnemies: [2]},
 			{id: 14, name: 'c15', type: 'req', path: 'media/mission_req.svg'},
-			{id: 15, name: 'c16', type: 'usual', path: 'media/mission_usual.svg'},
-			{id: 16, name: 'c17', type: 'usual', path: 'media/mission_usual.svg'},
+			{id: 15, name: 'c16', type: 'usual', path: 'media/mission_usual.svg',
+			preferredSquads: [0, 1, 2 , 3],
+			dangerousEnemies: [1, 2]},
+			{id: 16, name: 'c17', type: 'usual', path: 'media/mission_usual.svg',
+			preferredSquads: [0, 1, 2 , 3],
+			dangerousEnemies: [1, 2]},
 			{id: 17, name: 'c18', type: 'usual', path: 'media/mission_usual.svg'},
-			{id: 18, name: 'c19', type: 'usual', path: 'media/mission_usual.svg'},
-			{id: 19, name: 'c20', type: 'usual', path: 'media/mission_usual.svg'},
+			{id: 18, name: 'c19', type: 'usual', path: 'media/mission_usual.svg',
+			preferredSquads: [3, 4, 5, 6, 7],
+			dangerousEnemies: []},
+			{id: 19, name: 'c20', type: 'usual', path: 'media/mission_usual.svg',
+			preferredSquads: [3, 4, 5, 6, 7],
+			dangerousEnemies: []},
 			{id: 20, name: 'c21', type: 'req', path: 'media/mission_req.svg'},
-			{id: 21, name: 'c22', type: 'usual', path: 'media/mission_usual.svg'},
-			{id: 22, name: 'c23', type: 'usual', path: 'media/mission_usual.svg'},
+			{id: 21, name: 'c22', type: 'usual', path: 'media/mission_usual.svg',
+			preferredSquads: [0, 1, 2, 3, 5],
+			dangerousEnemies: [1]},
+			{id: 22, name: 'c23', type: 'usual', path: 'media/mission_usual.svg',
+			preferredSquads: [0, 1, 2, 3, 5],
+			dangerousEnemies: [1]},
 			{id: 23, name: 's1', type: 'special', path: 'media/mission_special.svg'},
 			{id: 24, name: 's2', type: 'special', path: 'media/mission_special.svg'},
 			{id: 25, name: 's3', type: 'special', path: 'media/mission_special.svg'},
@@ -53,16 +100,28 @@ let app = new Vue({
 			{id: 36, name: 'm4', type: 'platoon', path: 'media/platoon.png'},
 			{id: 37, name: 'b4', type: 'platoon', path: 'media/platoon.png'}
 		],
-		squads: [
-			'Sith Empire',
-			'First Order',
-			'Bounty Hunters',
-			'Emperor Palpatine (zeta)',
-			'Night Sisters',
-			'Triumvirate',
-			'Separatist Droids',
-			'Geonosians'			
-		],
+		selectedMission: '',
+		seen: false,
+		hide: function() {
+			this.seen = false;
+		}
 		
+	  }
+	},
+	template: '#mission'
+})
+
+let app = new Vue({
+	el: '#app',
+	data: {
+		
+		
+	},
+	/*
+	methods: {
+		test: function(event) {
+			console.log('123')
+		}
 	}
+	*/
 });

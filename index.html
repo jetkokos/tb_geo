@@ -197,35 +197,29 @@
 									">
 						</a>
 				</svg>
-				<mission
-					v-for="mission in missions"
-					v-bind:class="mission.name"
-					v-bind:src="mission.path"
-					v-bind:key="mission.id"
-				></mission>
-				<div class="description">
-					<p>text</p>
-				</div>
-				
+				<mission></mission>
 			</div>
 		</div>
 	</div>
 </div>
-
-					<!--
-					<div class="description">
-						<div v-show="" class="info">
-							<p class="h4">Preferred combat mission teams</p>
-							<p>{{squads[0]}}</p>
-							<p>{{squads[1]}}</p>
-							<p>{{squads[2]}}</p>
-							<p>{{squads[3]}}</p>
-							<p class="h4">Dangerous enemies</p>
-							<p>25% Mace (anti Jango)</p>
-							<p>25% Fives (anti Sion, NS, Wat Tambor)</p>
-						</div>
-					</div>
-					-->
+<!--Templates for Vue-->
+<template id="mission">
+	<div>
+		<img class="mission"
+		v-for="mission in missions" 
+		v-bind:key="mission.id" 
+		v-bind:class="mission.name"
+		v-bind:src="mission.path"
+		@click="selectedMission = mission; seen = !seen"
+		>
+		<div v-if="seen" v-click-outside="hide" class="description">
+			<p class="h4">Preferred teams</p>
+			<p v-for="item in selectedMission.preferredSquads">{{squads[item]}}</p>
+			<p class="h4">Dangerous enemies</p>
+			<p v-for="item in selectedMission.dangerousEnemies">{{enemies[item]}}</p>
+		</div>
+	</div>
+</template>
 <script src="js/vue.js"></script>
 <script src="js/main.js"></script>
 </body>

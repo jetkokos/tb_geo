@@ -40,11 +40,13 @@ body {
 
 .description {
 	position: absolute;
-	bottom: 10%;
-	right: 50%;
-	background-color: red;
-	width: 300px;
-	height: 100px;
+	bottom: 20%;
+	right: 10%;
+	background-color: rgb(35, 48, 67, 0.9);
+	width: 30%;
+	height: 60%;
+	padding: 0.5rem;
+	color: #ffffff;
 	
 }
 
