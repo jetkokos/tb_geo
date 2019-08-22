@@ -24,11 +24,6 @@
 								1*: 65,720,000 <br>
 								2*: 84,340,000 <br>
 								3*: 109,530,000 <br><br>
-								Mission rewards: <br>
-								1 волна: 187,500<br>
-								2 волны: 297,500<br>
-								3 волны: 500,000<br>
-								4 волны: 792,000<br>
 								">
 						</a>
 						<a href="#">
@@ -217,6 +212,8 @@
 			<p v-for="item in selectedMission.preferredSquads">{{squads[item]}}</p>
 			<p class="h4">Dangerous enemies</p>
 			<p v-for="item in selectedMission.dangerousEnemies">{{enemies[item]}}</p>
+			<p class="h4">Rewards</p>
+			<p v-for="item in selectedMission.rewards">{{item}} </p>
 		</div>
 	</div>
 </template>

@@ -53,7 +53,13 @@ Vue.component('mission', {
 			path: 'media/mission_usual.svg',
 			position: 'desc_right',
 			preferredSquads: [0,1,2,3],
-			dangerousEnemies: [1]
+			dangerousEnemies: [1],
+			rewards: [
+				'wave 1: 187 500',
+				'wave 2: 297 500',
+				'wave 3: 500 000',
+				'wave 4: 792 000'
+			] 
 			},
 			{id: 1,
 			name: 'c2',
