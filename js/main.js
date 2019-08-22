@@ -1,20 +1,21 @@
 /* Custom directive for detecting click outside of element */
 Vue.directive('click-outside', {
 	bind: function (el, binding, vnode) {
-	  this.event = function (event) {
+		this.event = function (event) {
 		if (!(el == event.target || el.contains(event.target))) {
-		  vnode.context[binding.expression](event);
+			vnode.context[binding.expression](event);
 		}
-	  };
-	  document.body.addEventListener('click', this.event)
+	};
+	document.body.addEventListener('click', this.event)
 	},
 	unbind: function (el) {
-	  document.body.removeEventListener('click', this.event)
+		document.body.removeEventListener('click', this.event)
 	},
-  });
+	});
 Vue.component('mission', {
 	data: function () {
-	  return {
+		return {
+		isMobile: false,
 		squads: [
 			'Sith Empire', 					//0
 			'First Order',					//1
@@ -106,9 +107,14 @@ Vue.component('mission', {
 			this.seen = false;
 		}
 		
-	  }
+	}
 	},
-	template: '#mission'
+	template: '#mission',
+	methods: {
+		mq () {
+			this.isMobile = window.matchMedia('(max-width: 400px)').matches;
+		},
+	}
 })
 
 let app = new Vue({
@@ -116,12 +122,10 @@ let app = new Vue({
 	data: {
 		
 		
+		
 	},
-	/*
-	methods: {
-		test: function(event) {
-			console.log('123')
-		}
-	}
-	*/
+	
+	
+	
+	
 });

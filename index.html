@@ -210,7 +210,7 @@
 		v-bind:key="mission.id" 
 		v-bind:class="mission.name"
 		v-bind:src="mission.path"
-		@click="selectedMission = mission; seen = !seen"
+		@mouseover="isMobile ? null : selectedMission = mission; seen = true" @mouseleave="seen = false"
 		>
 		<div v-if="seen" v-click-outside="hide" class="description">
 			<p class="h4">Preferred teams</p>

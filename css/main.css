@@ -29,8 +29,8 @@ body {
 	opacity: .3;
 	opacity: 0.1;
 	stroke: white;
- 	stroke-width: 1%;
- 	stroke-linejoin: round;
+	stroke-width: 1%;
+	stroke-linejoin: round;
 }
 .part:hover {
 	opacity: .5;
@@ -39,7 +39,7 @@ body {
 }
 
 .description {
-	position: absolute;
+	position: fixed;
 	bottom: 20%;
 	right: 10%;
 	background-color: rgb(35, 48, 67, 0.9);
@@ -47,6 +47,8 @@ body {
 	height: 60%;
 	padding: 0.5rem;
 	color: #ffffff;
+	z-index: 100;
+	
 	
 }
 
