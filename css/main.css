@@ -39,10 +39,9 @@ body {
 }
 
 .description {
-	display:none;
 	position: absolute;
 	bottom: 10%;
-	right: 10%;
+	right: 50%;
 	background-color: red;
 	width: 300px;
 	height: 100px;
@@ -63,15 +62,7 @@ body {
 	background: url('../media/focus.svg') no-repeat;
 	background-size: contain;
 }
-.squad_fill {
-	position: absolute;
-	cursor: pointer;
-	width: 5%;
-}
-.squad_fill img {
-	width: 50%;
-	
-}
+
 .info {
 	position: fixed;
 	bottom: -15%;
