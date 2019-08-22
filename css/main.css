@@ -40,17 +40,22 @@ body {
 
 .description {
 	position: fixed;
-	bottom: 20%;
-	right: 10%;
 	background-color: rgb(35, 48, 67, 0.9);
+	transform: translate(0, -50%);
+	top: 50%;
 	width: 30%;
-	height: 60%;
+	min-height: 300px;
 	padding: 0.5rem;
 	color: #ffffff;
 	z-index: 100;
-	
-	
 }
+.desc_left {
+	left: 8%;
+}
+.desc_right {
+	right: 8%;
+}
+
 
 .mission {
 	position: absolute;

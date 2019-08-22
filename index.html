@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Интерактивная карта</title>
+	<title>Separatist Might</title>
 	<meta name="description" content="">
 	<meta name="keywords" content=" ">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -212,7 +212,7 @@
 		v-bind:src="mission.path"
 		@mouseover="isMobile ? null : selectedMission = mission; seen = true" @mouseleave="seen = false"
 		>
-		<div v-if="seen" v-click-outside="hide" class="description">
+		<div v-if="seen" v-click-outside="hide" class="description" v-bind:class="selectedMission.position">
 			<p class="h4">Preferred teams</p>
 			<p v-for="item in selectedMission.preferredSquads">{{squads[item]}}</p>
 			<p class="h4">Dangerous enemies</p>
