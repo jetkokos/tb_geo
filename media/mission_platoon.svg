@@ -1,66 +1,67 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   id="svg815"
-   width="60"
-   height="60"
-   viewBox="0 0 60 60"
-   sodipodi:docname="mission_platoon.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
-  <metadata
-     id="metadata821">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs819" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1680"
-     inkscape:window-height="988"
-     id="namedview817"
-     showgrid="false"
-     inkscape:zoom="13.15"
-     inkscape:cx="30"
-     inkscape:cy="30"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg815" />
-  <image
-     width="60"
-     height="60"
-     preserveAspectRatio="none"
-     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAIAAAC1nk4lAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABUSURBVGhD7c4BCQAwEAOxOa/1uQg8XBTk7aDS
-SmmltFJaKa2UVkorpZXSSmmltFJaKa2UVkorpZXSSmmltFJaKa2UVkorpZXSSmmltFJaKa0cTG8f
-aKbu/ZIyd0wAAAAASUVORK5CYII=
-"
-     id="image823"
-     x="0"
-     y="0" />
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 327 327" style="enable-background:new 0 0 327 327;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#2E3192;}
+	.st1{fill:#66B6FF;}
+</style>
+<g>
+	<path class="st0" d="M27.2,319.5c-11.4,0-20.7-9.3-20.7-20.7V27.2c0-11.4,9.3-20.7,20.7-20.7h271.7c11.4,0,20.7,9.3,20.7,20.7
+		v271.7c0,11.4-9.3,20.7-20.7,20.7H27.2z"/>
+	<path d="M298.8,13c7.8,0,14.2,6.4,14.2,14.2v271.7c0,7.8-6.4,14.2-14.2,14.2H27.2c-7.8,0-14.2-6.4-14.2-14.2V27.2
+		C13,19.4,19.4,13,27.2,13H298.8 M298.8,0H27.2C12.2,0,0,12.2,0,27.2v271.7C0,313.8,12.2,326,27.2,326h271.7
+		c14.9,0,27.2-12.2,27.2-27.2V27.2C326,12.2,313.8,0,298.8,0L298.8,0z"/>
+</g>
+<g>
+	<path class="st1" d="M163.5,13.5c39.9,0,77.5,15.6,105.7,43.8C297.4,85.5,313,123.1,313,163s-15.6,77.5-43.8,105.7
+		c-28.2,28.2-65.8,43.8-105.7,43.8S86,296.9,57.8,268.7C29.6,240.5,14,202.9,14,163S29.6,85.5,57.8,57.3
+		C86,29.1,123.6,13.5,163.5,13.5 M163.5,0.5C73.8,0.5,1,73.3,1,163s72.8,162.5,162.5,162.5S326,252.7,326,163S253.2,0.5,163.5,0.5
+		L163.5,0.5z"/>
+</g>
+<g>
+	<path class="st1" d="M163.5,31c35.3,0,68.4,13.7,93.3,38.7c24.9,24.9,38.7,58.1,38.7,93.3s-13.7,68.4-38.7,93.3
+		c-24.9,24.9-58.1,38.7-93.3,38.7s-68.4-13.7-93.3-38.7c-24.9-24.9-38.7-58.1-38.7-93.3s13.7-68.4,38.7-93.3
+		C95.1,44.7,128.2,31,163.5,31 M163.5,18c-80.1,0-145,64.9-145,145s64.9,145,145,145s145-64.9,145-145S243.6,18,163.5,18L163.5,18z"
+		/>
+</g>
+<g>
+	<path d="M299.3,14c7.3,0,13.2,5.9,13.2,13.2v271.7c0,7.3-5.9,13.2-13.2,13.2H27.7c-7.3,0-13.2-5.9-13.2-13.2V27.2
+		c0-7.3,5.9-13.2,13.2-13.2H299.3 M299.3,0H27.7C12.7,0,0.5,12.2,0.5,27.2v271.7c0,14.9,12.2,27.2,27.2,27.2h271.7
+		c14.9,0,27.2-12.2,27.2-27.2V27.2C326.5,12.2,314.3,0,299.3,0L299.3,0z"/>
+</g>
+<g>
+	<g>
+		<rect x="16" y="152" class="st0" width="295" height="22"/>
+	</g>
+	<g>
+		<rect x="152.5" y="15.5" class="st0" width="22" height="295"/>
+	</g>
+	<g>
+		
+			<rect x="152.5" y="15.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -67.3704 163.3535)" class="st0" width="22" height="295"/>
+	</g>
+	<g>
+		<rect x="16" y="152" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -67.3704 163.3535)" class="st0" width="295" height="22"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect x="36.5" y="154.4" class="st1" width="254" height="17.2"/>
+	</g>
+	<g>
+		<rect x="154.9" y="36" class="st1" width="17.2" height="254"/>
+	</g>
+	<g>
+		
+			<rect x="154.9" y="36" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -67.3704 163.3535)" class="st1" width="17.2" height="254"/>
+	</g>
+	<g>
+		
+			<rect x="36.5" y="154.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -67.3704 163.3535)" class="st1" width="254" height="17.2"/>
+	</g>
+</g>
+<g>
+	<ellipse class="st1" cx="163.5" cy="163" rx="47.7" ry="46.5"/>
+</g>
 </svg>

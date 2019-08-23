@@ -75,12 +75,12 @@ Vue.component('mission', {
 			},
 			{
 				id: 11,
-				name: 'Chimaera standart',
+				name: 'Chimaera standard',
 				toons: ['hounds_tooth', 'imperial_tie_fighter', 'tie_silencer', 'xanadu_blood', 'emperor_shuttle']
 			},
 			{
 				id: 12,
-				name: 'Executrix standart',
+				name: 'Executrix standard',
 				toons: ['sun_fac_geonosian_starfighter', 'geonosian_spy_starfighter', 'geonosioan_soldier_starfighter', 'gaunlet_starfighter', 'slave_1' ]
 			},
 			{
