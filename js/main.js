@@ -18,26 +18,61 @@ Vue.component('mission', {
 		return {
 		isMobile: false,
 		squads: [
-			{
+			{	
+				id: 0,
 				name: 'Sith Empire',
-				toons: ['darth_revan', 'bastila_shan', 'hk_47', 'marauder', 'darth_malak']
+				toons: ['darth_revan', 'bastila_shan_fallen', 'hk_47', 'sith_marauder', 'darth_malak']
 			},
 			{
+				id: 1,
 				name: 'First Order',
-				toons: ['kailo_ren_unmasked', 'kailo_ren_masked', 'executor', 'officer', 'trooper'],
+				toons: ['kylo_ren_unmasked', 'kylo_ren', 'first_order_executioner', 'first_order_officer', 'first_order_stormtrooper'],
 			},
-			'Bounty Hunters',				//2
-			'Emperor Palpatine (zeta)',		//3
-			'Night Sisters',				//4
-			'Triumvirate',					//5
-			'Separatist Droids',
 			{
+				id: 2,
+				name: 'Bounty Hunters',
+				toons: ['bossk','jango_fett', 'boba_fett', 'dengar', 'cad_bane']
+			},
+			{
+				id: 3,
+				name: 'Empire',
+				toons: ['emperor_palpatine', 'darth_vader', 'grand_admiral_trawn', 'grand_moff_tarkin', 'tie_fighter_pilot'  ]
+			},
+			{
+				id: 4,
+				name: 'Night Sisters',
+				toons: ['mother_talzin', 'asajj_ventress', 'nightsister_zombie', 'old_daka', 'talia' ]
+			},
+			{
+				id: 5,
+				name: 'Sith Triumvirate',
+				toons: ['darth_traya', 'darth_sion', 'darth_nihilus', 'sith_trooper', 'count_dooku']
+			},
+			{
+				id: 6,
+				name: 'Separatist Droids',
+				toons: ['general_grievous', 'b2_super_battle_droid', 'b1_battle_droid', 'droideka', 'ig100_magnaguard']
+			},
+			{
+				id: 7,
 				name: 'Geonosians',
 				toons: ['geonosian_brood_alfa', 'geonosian_soldier', 'geonosian_spy', 'poggle_the_lesser', 'sun_fac']
-
-			},			
-			'Nute Gunray(L) B1 Battle Droid B2 Super Battle Droid Droideka Magnaguard',	//8
-			'Dooku(L) + Asajj Ventress'		//9
+			},
+			{
+				id: 8,
+				name: 'Nute Gunrey',
+				toons: ['nute_gunrey', 'b1_battle_droid', 'b2_super_battle_droid', 'droideka', 'ig100_magnaguard' ]
+			},
+			{
+				id: 9,
+				name: 'Dooku + Asajj',
+				toons: ['count_dooku', 'asajj_ventress']
+			},
+			{
+				id: 10,
+				name: 'Poggle Geos',
+				toons: ['poggle_the_lesser', 'geonosian_soldier', 'geonosian_spy', 'sun_fac', 'geonosian_brood_alfa']
+			}		
 
 		],
 		enemies: [
@@ -80,7 +115,7 @@ Vue.component('mission', {
 				'Wave 3: 500 000',
 				'Wave 4: 792 000'
 				],
-			preferredSquads: [7],
+			preferredSquads: [10],
 			dangerousEnemies: [1]
 			}, {
 			id: 2,
@@ -357,7 +392,7 @@ Vue.component('mission', {
 			type: 'special',
 			position: 'left',
 			rewards: [
-				'40 GET2',
+				'1 Wat Tambor Shard',
 				],
 			},
 			{
@@ -366,7 +401,7 @@ Vue.component('mission', {
 			type: 'special',
 			position: 'left',
 			rewards: [
-				'1 Wat Tambor Shard',
+				'40 GET2',
 				],
 			},
 			{id: 27, name: 't1', type: 'platoon', position: 'right'},

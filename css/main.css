@@ -72,8 +72,8 @@ p {
 	background-size: contain;
 }
 .img_block img {
-	max-width: 18%;
-	max-height: 18%;
+	max-width: 15%;
+	max-height: 15%;
 	border-radius: 50%;
 	border: 2px solid #ffffff;
 	margin-right: 0.5%;
@@ -264,5 +264,12 @@ p {
 	}
 	.desc_right {
 		right: 0;
+	}
+	.img_block img {
+		max-width: 5%;
+		max-height: 5%;
+		border-radius: 50%;
+		border: 2px solid #ffffff;
+		margin-right: 0.5%;
 	}
 }
