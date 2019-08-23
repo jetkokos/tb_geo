@@ -60,7 +60,7 @@ Vue.component('mission', {
 			},
 			{
 				id: 8,
-				name: 'Nute Gunrey',
+				name: 'Nute team',
 				toons: ['nute_gunrey', 'b1_battle_droid', 'b2_super_battle_droid', 'droideka', 'ig100_magnaguard' ]
 			},
 			{
@@ -72,24 +72,38 @@ Vue.component('mission', {
 				id: 10,
 				name: 'Poggle Geos',
 				toons: ['poggle_the_lesser', 'geonosian_soldier', 'geonosian_spy', 'sun_fac', 'geonosian_brood_alfa']
-			}		
+			},
+			{
+				id: 11,
+				name: 'Chimaera standart',
+				toons: ['hounds_tooth', 'imperial_tie_fighter', 'tie_silencer', 'xanadu_blood', 'emperor_shuttle']
+			},
+			{
+				id: 12,
+				name: 'Executrix standart',
+				toons: ['sun_fac_geonosian_starfighter', 'geonosian_spy_starfighter', 'geonosioan_soldier_starfighter', 'gaunlet_starfighter', 'slave_1' ]
+			},
+			{
+				id: 13,
+				name: 'Chimaera bugs',
+				toons: ['sun_fac_geonosian_starfighter', 'geonosian_spy_starfighter', 'geonosioan_soldier_starfighter', 'gaunlet_starfighter', 'slave_1' ]
+			}	
 
 		],
 		enemies: [
-			'Mace Windu (anti Jango)',						//0
-			'CT-5555 "Fives" (anti Sion, NS, Wat Tambor)',	//1
-			'Clone Commander (anti Darth Revan)',			//2
-			'Padawan Anakin',								//3
-			'ARC Trooper',									//4
-			'CT-7567 "Rex"',								//5
-			'Shaak-Ti',										//6
-			'CC-2224 "Cody"',								//7
-			'Ki-Adi Mundi',									//8
-			'General Kenobi',								//9
-			'Clone Trooper Medic',							//10
-			'Padme Amidala',								//11
-			'Grand Master Yoda',							//12
-
+			'Mace Windu',     									//0  (counter Jango)                   
+			'CT-5555 "Fives"',    								//1 (counter Sion, NS, Wat Tambor)
+			'Clone Commander', 									//2  (counter Darth Revan)           
+			'Padawan Anakin',									//3 (counter NS)                           
+			'ARC Trooper',                               		//4
+			'CT-7567 "Rex"',									//5 (counter Geonosians, General Grievous)                               
+			'Shaak-Ti',											//6 (counter all, Sith Empire or Traya prefered)                                 
+			'CC-2224 "Cody"',                          			//7
+			'Ki-Adi Mundi',                            			//8
+			'General Kenobi',                            		//9
+			'Clone Trooper Medic',                          	//10
+			'Padme Amidala',     								//11 (counter Geonosians, General Grievous)                          
+			'Grand Master Yoda',                       			//12
 		],
 		missions: [{
 			id: 0,
@@ -103,7 +117,7 @@ Vue.component('mission', {
 				'Wave 4: 792 000'
 				],
 			preferredSquads: [0,1,2,3],
-			dangerousEnemies: [1]
+			dangerousEnemies: [1, 3, 4, 5]
 			},	{
 			id: 1,
 			name: 'c2',
@@ -116,7 +130,7 @@ Vue.component('mission', {
 				'Wave 4: 792 000'
 				],
 			preferredSquads: [10],
-			dangerousEnemies: [1]
+			dangerousEnemies: [1, 3, 4, 5]
 			}, {
 			id: 2,
 			name: 'c3',
@@ -129,7 +143,7 @@ Vue.component('mission', {
 				'Wave 4: 792 000'
 				],
 			preferredSquads: [1,3,4,5],
-			dangerousEnemies: [0, 2]
+			dangerousEnemies: [0, 2, 4, 6]
 			},
 			{
 			id: 3,
@@ -143,7 +157,7 @@ Vue.component('mission', {
 				'Wave 4: 792 000'
 				],
 			preferredSquads: [1,3,4,5],
-			dangerousEnemies: [0, 2]
+			dangerousEnemies: [0, 2, 4, 6]
 			},
 			{
 			id: 4,
@@ -153,6 +167,7 @@ Vue.component('mission', {
 			rewards: [
 				'Wave 1: 825 000',
 				],
+				preferredSquads: [11],
 			}, 
 			{
 			id: 5,
@@ -162,6 +177,7 @@ Vue.component('mission', {
 			rewards: [
 				'Wave 1: 1 072 500',
 				],
+				preferredSquads: [12],
 			}, 
 			{
 			id: 6,
@@ -175,7 +191,7 @@ Vue.component('mission', {
 				'Wave 4: 1 080 000'
 				],
 			preferredSquads: [1, 2, 3, 5],
-			dangerousEnemies: [1, 2]
+			dangerousEnemies: [1, 2, 4, 7]
 			},
 			{id: 7,
 			name: 'c8',
@@ -188,6 +204,7 @@ Vue.component('mission', {
 				'Wave 4: 1 404 000'
 				],
 			preferredSquads: [9],
+			dangerousEnemies: [2, 7]
 			},
 			{
 			id: 8,
@@ -201,7 +218,7 @@ Vue.component('mission', {
 				'Wave 4: 1 080 000'
 				],
 			preferredSquads: [1, 2, 3, 5],
-			dangerousEnemies: [1, 2]
+			dangerousEnemies: [1, 2, 4, 7]
 			},
 			{
 			id: 9,
@@ -215,7 +232,7 @@ Vue.component('mission', {
 				'Wave 4: 1 080 000'
 				],
 			preferredSquads: [0, 3, 4, 5, 6],
-			dangerousEnemies: [0]
+			dangerousEnemies: [0, 3, 8, 9]
 			},
 			{
 			id: 10,
@@ -229,7 +246,7 @@ Vue.component('mission', {
 				'Wave 4: 1 080 000'
 				],
 			preferredSquads: [0, 3, 4, 5, 6],
-			dangerousEnemies: [0]
+			dangerousEnemies: [0, 3, 8, 9]
 			},
 			{
 			id: 11,
@@ -239,6 +256,7 @@ Vue.component('mission', {
 			rewards: [
 				'Wave 1: 1 665 000',
 				],
+			preferredSquads: [11],
 			},
 			{
 			id: 12,
@@ -248,6 +266,7 @@ Vue.component('mission', {
 			rewards: [
 				'Wave 1: 2 164 500',
 				],
+			preferredSquads: [12],
 			},
 			{id: 13,
 			name: 'c14',
@@ -260,7 +279,7 @@ Vue.component('mission', {
 				'Wave 4: 1 352 000'
 				],
 			preferredSquads: [3, 4, 5],
-			dangerousEnemies: [2]
+			dangerousEnemies: [2, 4, 6, 8, 10]
 			},
 			{
 			id: 14,
@@ -273,6 +292,8 @@ Vue.component('mission', {
 				'Wave 3: 910 000',
 				'Wave 4: 1 352 000'
 				],
+			preferredSquads: [6],
+			dangerousEnemies: [2, 4, 6, 8, 10]
 			},
 			{
 			id: 15,
@@ -286,7 +307,8 @@ Vue.component('mission', {
 				'Wave 4: 1 352 000'
 				],
 			preferredSquads: [0, 1, 2 , 3],
-			dangerousEnemies: [1, 2]},
+			dangerousEnemies: [1, 2, 3, 4, 5, 10]
+			},
 			{
 			id: 16,
 			name: 'c17',
@@ -299,7 +321,7 @@ Vue.component('mission', {
 				'Wave 4: 1 352 000'
 				],
 			preferredSquads: [0, 1, 2 , 3],
-			dangerousEnemies: [1, 2]
+			dangerousEnemies: [1, 2, 3, 4, 5, 10]
 			},
 			{
 			id: 17,
@@ -309,6 +331,7 @@ Vue.component('mission', {
 			rewards: [
 				'Wave 1: 2 530 000',
 				],
+			preferredSquads: [13],	
 			},
 			{
 			id: 18,
@@ -317,9 +340,12 @@ Vue.component('mission', {
 			position: 'left',
 			rewards: [
 				'Wave 1: 405 000',
+				'Wave 2: 675 000',
+				'Wave 3: 1 038 500',
+				'Wave 4: 1 564 000',
 				],
 			preferredSquads: [3, 4, 5, 6, 7],
-			dangerousEnemies: []
+			dangerousEnemies: [2, 3, 4, 5, 6, 9, 11, 12]
 			},
 			{id: 19,
 			name: 'c20',
@@ -327,9 +353,12 @@ Vue.component('mission', {
 			position: 'left',
 			rewards: [
 				'Wave 1: 405 000',
+				'Wave 2: 675 000',
+				'Wave 3: 1 038 500',
+				'Wave 4: 1 564 000',
 				],
 			preferredSquads: [3, 4, 5, 6, 7],
-			dangerousEnemies: []
+			dangerousEnemies: [2, 3, 4, 5, 6, 9, 11, 12]
 			},
 			{
 			id: 20,
@@ -340,6 +369,7 @@ Vue.component('mission', {
 				'Wave 1: 1 350 050',
 				'Wave 2: 2 033 200',
 				],
+				dangerousEnemies: [2, 4, 6, 9, 12]
 			},
 			{
 			id: 21,
@@ -347,12 +377,13 @@ Vue.component('mission', {
 			type: 'usual',
 			position: 'left',
 			rewards: [
-				'Wave 1: 675 000',
-				'Wave 2: 1 038 500',
-				'Wave 3: 1 564 000',
+				'Wave 1: 405 000',
+				'Wave 2: 675 000',
+				'Wave 3: 1 038 500',
+				'Wave 4: 1 564 000',
 				],
 			preferredSquads: [0, 1, 2, 3, 5],
-			dangerousEnemies: [1]
+			dangerousEnemies: [0, 1, 2, 4, 7, 8, 10]
 			},
 			{
 			id: 22,
@@ -360,12 +391,13 @@ Vue.component('mission', {
 			type: 'usual',
 			position: 'left',
 			rewards: [
-				'Wave 1: 675 000',
-				'Wave 2: 1 038 500',
-				'Wave 3: 1 564 000',
+				'Wave 1: 405 000',
+				'Wave 2: 675 000',
+				'Wave 3: 1 038 500',
+				'Wave 4: 1 564 000',
 				],
 			preferredSquads: [0, 1, 2, 3, 5],
-			dangerousEnemies: [1]
+			dangerousEnemies: [0, 1, 2, 4, 7, 8, 10]
 			},
 			{
 			id: 23,
@@ -375,7 +407,8 @@ Vue.component('mission', {
 			rewards: [
 				'15 GET2',
 				],
-			preferredSquads: [8]
+			preferredSquads: [8],
+			dangerousEnemies: [0, 4, 6, 7]
 			},
 			{
 			id: 24,
@@ -385,6 +418,7 @@ Vue.component('mission', {
 			rewards: [
 				'20 GET2',
 				],
+				preferredSquads: [7],
 			},
 			{
 			id: 25,
@@ -394,6 +428,7 @@ Vue.component('mission', {
 			rewards: [
 				'1 Wat Tambor Shard',
 				],
+			preferredSquads: [7]
 			},
 			{
 			id: 26,
@@ -403,6 +438,8 @@ Vue.component('mission', {
 			rewards: [
 				'40 GET2',
 				],
+			dangerousEnemies: [0, 2, 4, 7]
+				
 			},
 			{id: 27, name: 't1', type: 'platoon', position: 'right'},
 			{id: 28, name: 'b1', type: 'platoon', position: 'right'},

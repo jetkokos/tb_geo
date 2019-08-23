@@ -59,7 +59,7 @@ p {
 }
 .mission {
 	position: absolute;
-	width: 4%;
+	width: 3%;
 	cursor: pointer;
 	transition: all 0.5s ease;
 }
@@ -72,8 +72,8 @@ p {
 	background-size: contain;
 }
 .img_block img {
-	max-width: 15%;
-	max-height: 15%;
+	max-width: 10%;
+	max-height: 10%;
 	border-radius: 50%;
 	border: 2px solid #ffffff;
 	margin-right: 0.5%;
