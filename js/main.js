@@ -472,5 +472,6 @@ Vue.component('mission', {
 let app = new Vue({
 	el: '#app',
 	data: {
+		isVisible: false
 	},
 });

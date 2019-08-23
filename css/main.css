@@ -57,6 +57,18 @@ p {
 .desc_right {
 	right: 8%;
 }
+.stars_info { 
+	position: absolute;
+	font-size: 1.2rem;
+	font-weight: bold;
+	transform: translate(0, -50%);
+	top: 45%;
+	left: 16%;
+	padding: 0.2rem;
+	color: #ffffff;
+	z-index: 100;
+	border-radius: 1%;
+}
 .mission {
 	position: absolute;
 	width: 3%;
