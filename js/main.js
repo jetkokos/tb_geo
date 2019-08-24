@@ -124,7 +124,7 @@ Vue.component('mission', {
 			'Ki-Adi Mundi',                            																					//8
 			'General Kenobi (Paired with Padme; GR allies gain protection up when are attacked out of turn, tm can\'t be removed',  	//9
 			'Clone Trooper Medic',                          	//10
-			'Padme Amidala (Galactic republic allies gain protection up when are attcked out of turn; tm can\'t be removed)',     		//11 (counter Geonosians, General Grievous)                          
+			'Padme Amidala (Galactic republic allies gain protection up when are attacked out of turn; tm can\'t be removed)',     		//11 (counter Geonosians, General Grievous)                          
 			'Grand Master Yoda (High tenacity, gain tm when resists debuffs)',                       									//12
 		],
 		missions: [{
