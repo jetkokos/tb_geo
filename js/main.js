@@ -366,7 +366,7 @@ Vue.component('mission', {
 				'Wave 3: 1 038 500',
 				'Wave 4: 1 564 000',
 				],
-			preferredSquads: [3, 4, 5, 6, 7],
+			preferredSquads: [3, 4, 15, 6, 7],
 			dangerousEnemies: [2, 3, 4, 5, 6, 9, 11, 12]
 			},
 			{id: 19,
@@ -379,7 +379,7 @@ Vue.component('mission', {
 				'Wave 3: 1 038 500',
 				'Wave 4: 1 564 000',
 				],
-			preferredSquads: [3, 4, 5, 6, 7],
+			preferredSquads: [3, 4, 15, 6, 7],
 			dangerousEnemies: [2, 3, 4, 5, 6, 9, 11, 12]
 			},
 			{
@@ -405,7 +405,7 @@ Vue.component('mission', {
 				'Wave 3: 1 038 500',
 				'Wave 4: 1 564 000',
 				],
-			preferredSquads: [0, 1, 2, 3, 5],
+			preferredSquads: [0, 1, 2, 3, 15],
 			dangerousEnemies: [0, 1, 2, 4, 7, 8, 10]
 			},
 			{
@@ -419,7 +419,7 @@ Vue.component('mission', {
 				'Wave 3: 1 038 500',
 				'Wave 4: 1 564 000',
 				],
-			preferredSquads: [0, 1, 2, 3, 5],
+			preferredSquads: [0, 1, 2, 3, 15],
 			dangerousEnemies: [0, 1, 2, 4, 7, 8, 10]
 			},
 			{
