@@ -285,7 +285,7 @@ text:hover {
 	.description {
 		position: absolute;
 		top: 100%;
-		width: 100%;
+		min-width: 100%;
 		min-height: 300px;
 		transform: none;
 	}
