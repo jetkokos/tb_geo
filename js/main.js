@@ -122,9 +122,9 @@ Vue.component('mission', {
 			'Shaak-Ti',																													//6 (counter all, Sith Empire or Traya prefered)                                 
 			'CC-2224 "Cody"',                          																					//7
 			'Ki-Adi Mundi',                            																					//8
-			'General Kenobi (Is paired with Padme; GR allies gains protection up when is attacked out of turn, tm can\'t be removed',  	//9
+			'General Kenobi (Paired with Padme; GR allies gain protection up when are attacked out of turn, tm can\'t be removed',  	//9
 			'Clone Trooper Medic',                          	//10
-			'Padme Amidala (galactic republic allies gains protection up when is attcked out of turn; tm can\'t be removed)',     		//11 (counter Geonosians, General Grievous)                          
+			'Padme Amidala (Galactic republic allies gain protection up when are attcked out of turn; tm can\'t be removed)',     		//11 (counter Geonosians, General Grievous)                          
 			'Grand Master Yoda (High tenacity, gain tm when resists debuffs)',                       									//12
 		],
 		missions: [{
