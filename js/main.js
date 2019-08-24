@@ -41,7 +41,7 @@ Vue.component('mission', {
 			{
 				id: 4,
 				name: 'Night Sisters',
-				toons: ['mother_talzin', 'asajj_ventress', 'nightsister_zombie', 'old_daka', 'talia' ]
+				toons: ['mother_talzin', 'asajj_ventress', 'nightsister_zombie', 'old_daka', 'nightsister_spirit' ]
 			},
 			{
 				id: 5,
@@ -87,23 +87,45 @@ Vue.component('mission', {
 				id: 13,
 				name: 'Chimaera bugs',
 				toons: ['sun_fac_geonosian_starfighter', 'geonosian_spy_starfighter', 'geonosioan_soldier_starfighter', 'gaunlet_starfighter', 'slave_1' ]
-			}	
+			},
+			{
+				id: 14,
+				name: 'Nightsisters without Asajj',
+				toons: ['mother_talzin',  'nightsister_zombie', 'old_daka', 'nightsister_spirit', 'talia' ]
+			},
+			{
+				id: 15,
+				name: 'Sith Triumvirate without Dooku',
+				toons: ['darth_traya', 'darth_sion', 'darth_nihilus', 'sith_trooper', 'sith_assasin']
+			},
+			{
+				id: 16,
+				name: 'Test squad',
+				toons: ['count_dooku', 'general_grievous', 'b2_super_battle_droid', 'nute_gunrey', 'b1_battle_droid']
+			},
+			{
+				id: 17,
+				name: 'Executrix without Hound\'s Tooth',
+				toons: ['b28_extinction_class_bomber', 'emperor_shuttle', 'sith_fighter', 'tie_advanced_x1', 'xanadu_blood']
+			}
+			
+
 
 		],
 		enemies: [
-			'Mace Windu',     									//0  (counter Jango)                   
-			'CT-5555 "Fives"',    								//1 (counter Sion, NS, Wat Tambor)
-			'Clone Commander', 									//2  (counter Darth Revan)           
-			'Padawan Anakin',									//3 (counter NS)                           
-			'ARC Trooper',                               		//4
-			'CT-7567 "Rex"',									//5 (counter Geonosians, General Grievous)                               
-			'Shaak-Ti',											//6 (counter all, Sith Empire or Traya prefered)                                 
-			'CC-2224 "Cody"',                          			//7
-			'Ki-Adi Mundi',                            			//8
-			'General Kenobi',                            		//9
+			'Mace Windu (instantly kills Jango Fett)',     																				//0  (counter Jango)                   
+			"CT-5555 'Fives' (Enemies killed by clone troopers can't be revived)",    													//1 (counter Sion, NS, Wat Tambor)
+			'Clone Commander (Speed of all characters equals 150)', 																	//2  (counter Darth Revan)           
+			'Padawan Anakin (Strong aoe)',																								//3 (counter NS)                           
+			'ARC Trooper',                               																				//4
+			'CT-7567 "Rex" (Clones receive 15% tm when suffer critical hit)',															//5 (counter Geonosians, General Grievous)                               
+			'Shaak-Ti',																													//6 (counter all, Sith Empire or Traya prefered)                                 
+			'CC-2224 "Cody"',                          																					//7
+			'Ki-Adi Mundi',                            																					//8
+			'General Kenobi (Is paired with Padme; GR allies gains protection up when is attacked out of turn, tm can\'t be removed',  	//9
 			'Clone Trooper Medic',                          	//10
-			'Padme Amidala',     								//11 (counter Geonosians, General Grievous)                          
-			'Grand Master Yoda',                       			//12
+			'Padme Amidala (galactic republic allies gains protection up when is attcked out of turn; tm can\'t be removed)',     		//11 (counter Geonosians, General Grievous)                          
+			'Grand Master Yoda (High tenacity, gain tm when resists debuffs)',                       									//12
 		],
 		missions: [{
 			id: 0,
@@ -167,7 +189,7 @@ Vue.component('mission', {
 			rewards: [
 				'Wave 1: 825 000',
 				],
-				preferredSquads: [11],
+				preferredSquads: [11, 17],
 			}, 
 			{
 			id: 5,
@@ -177,7 +199,7 @@ Vue.component('mission', {
 			rewards: [
 				'Wave 1: 1 072 500',
 				],
-				preferredSquads: [12],
+				preferredSquads: [12, 13],
 			}, 
 			{
 			id: 6,
@@ -190,7 +212,7 @@ Vue.component('mission', {
 				'Wave 3: 708 000',
 				'Wave 4: 1 080 000'
 				],
-			preferredSquads: [1, 2, 3, 5],
+			preferredSquads: [1, 2, 3, 15],
 			dangerousEnemies: [1, 2, 4, 7]
 			},
 			{id: 7,
@@ -217,7 +239,7 @@ Vue.component('mission', {
 				'Wave 3: 708 000',
 				'Wave 4: 1 080 000'
 				],
-			preferredSquads: [1, 2, 3, 5],
+			preferredSquads: [1, 2, 3, 15],
 			dangerousEnemies: [1, 2, 4, 7]
 			},
 			{
@@ -231,7 +253,7 @@ Vue.component('mission', {
 				'Wave 3: 708 000',
 				'Wave 4: 1 080 000'
 				],
-			preferredSquads: [0, 3, 4, 5, 6],
+			preferredSquads: [0, 3, 14, 5, 6],
 			dangerousEnemies: [0, 3, 8, 9]
 			},
 			{
@@ -245,7 +267,7 @@ Vue.component('mission', {
 				'Wave 3: 708 000',
 				'Wave 4: 1 080 000'
 				],
-			preferredSquads: [0, 3, 4, 5, 6],
+			preferredSquads: [0, 3, 14, 5, 6],
 			dangerousEnemies: [0, 3, 8, 9]
 			},
 			{
@@ -256,7 +278,7 @@ Vue.component('mission', {
 			rewards: [
 				'Wave 1: 1 665 000',
 				],
-			preferredSquads: [11],
+			preferredSquads: [11, 17],
 			},
 			{
 			id: 12,
@@ -266,7 +288,7 @@ Vue.component('mission', {
 			rewards: [
 				'Wave 1: 2 164 500',
 				],
-			preferredSquads: [12],
+			preferredSquads: [12, 13],
 			},
 			{id: 13,
 			name: 'c14',
@@ -369,7 +391,8 @@ Vue.component('mission', {
 				'Wave 1: 1 350 050',
 				'Wave 2: 2 033 200',
 				],
-				dangerousEnemies: [2, 4, 6, 9, 12]
+				dangerousEnemies: [2, 4, 6, 9, 12],
+				preferredSquads: [16]
 			},
 			{
 			id: 21,
