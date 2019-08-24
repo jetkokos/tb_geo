@@ -38,7 +38,25 @@ p {
 .part:hover {
 	opacity: .5;
 	transition: all 0.5s ease;
+	cursor: pointer;
 }
+svg text {
+	fill: #ffffff;
+	font-size: 10px;
+	display: none;
+}
+.part:hover + text {
+	display: block;
+}
+text:hover {
+	display: block;
+}
+
+
+
+
+
+
 .description {
 	position: absolute;
 	background-color: rgb(35, 48, 67, 0.9);
@@ -126,7 +144,7 @@ p {
 }
 .c6 {
 	top: 30%;
-	left: 40%;
+	left: 38%;
 }
 .c7 {
 	top: 45%;
@@ -149,12 +167,12 @@ p {
 	left: 45%;
 }
 .c12 {
-	top: 36%;
-	left: 52%;
+	top: 34%;
+	left: 54%;
 }
 .c13 {
 	top: 38%;
-	left: 59%;
+	left: 61%;
 }
 .c14 {
 	top: 52%;
@@ -181,8 +199,8 @@ p {
 	left: 75%;
 }
 .c20 {
-	top: 54%;
-	left: 79%;
+	top: 56%;
+	left: 78%;
 }
 .c21 {
 	top: 30%;
@@ -235,7 +253,7 @@ p {
 	left: 34%;
 }
 .t3 {
-	top: 29%;
+	top: 26%;
 	left: 56%;
 }
 .m3 {
@@ -244,7 +262,7 @@ p {
 }
 .b3 {
 	top: 75%;
-	left: 69%;
+	left: 72%;
 }
 .t4 {
 	top: 25%;

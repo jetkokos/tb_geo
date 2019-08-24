@@ -85,7 +85,7 @@ Vue.component('mission', {
 			},
 			{
 				id: 13,
-				name: 'Chimaera bugs',
+				name: 'Chimaera bugs (without Hound\'s Tooth)',
 				toons: ['sun_fac_geonosian_starfighter', 'geonosian_spy_starfighter', 'geonosioan_soldier_starfighter', 'gaunlet_starfighter', 'slave_1' ]
 			},
 			{
