@@ -99,7 +99,6 @@
 						<tspan x="835" dy="15">3*: 142,600,000</tspan>	
 					</text>	
 				</svg>
-				
 				<mission></mission>
 			</div>
 		</div>
@@ -117,21 +116,28 @@
 		>
 		<!--v-click-outside="hide"-->
 		<div v-if="seen" class="description" v-bind:class="'desc_' + selectedMission.position">
-			<p class="h4">Preferred teams</p>
-			<div v-for="item in selectedMission.preferredSquads">
-				<p>{{squads[item].name}}</p>
-				
-				<div class="img_block">
-					<img 
-					v-for="pic in squads[item].toons"
-					v-bind:src="'media/toons/' + pic + '.png'"
-					>
+			
+			<div class="mb-3">
+				<p class="h4">Preferred teams</p>
+				<div v-for="item in selectedMission.preferredSquads">
+					<p>{{squads[item].name}}</p>
+					<div class="img_block">
+						<img 
+						v-for="pic in squads[item].toons"
+						v-bind:src="'media/toons/' + pic + '.png'"
+						>
+					</div>
 				</div>
 			</div>
-			<p class="h4">Dangerous enemies</p>
-			<p v-for="item in selectedMission.dangerousEnemies">{{enemies[item]}}</p>
-			<p class="h4">Rewards</p>
-			<span v-for="item in selectedMission.rewards">{{item}} </span>
+			
+			<div class="mb-3">
+				<p class="h4">Dangerous enemies</p>
+				<li class="text-justify" v-for="item in selectedMission.dangerousEnemies">{{enemies[item]}}</li>
+			</div>
+			<div class="mb-3">
+				<p class="h4">Rewards</p>
+				<span v-for="item in selectedMission.rewards">&nbsp;&nbsp;{{item}}&nbsp;&nbsp;</span>
+			</div>
 		</div>
 	</div>
 </template>

@@ -253,7 +253,7 @@ Vue.component('mission', {
 				'Wave 3: 708 000',
 				'Wave 4: 1 080 000'
 				],
-			preferredSquads: [0, 3, 14, 5, 6],
+			preferredSquads: [0, 3, 14, 15, 6],
 			dangerousEnemies: [0, 3, 8, 9]
 			},
 			{
@@ -267,7 +267,7 @@ Vue.component('mission', {
 				'Wave 3: 708 000',
 				'Wave 4: 1 080 000'
 				],
-			preferredSquads: [0, 3, 14, 5, 6],
+			preferredSquads: [0, 3, 14, 15, 6],
 			dangerousEnemies: [0, 3, 8, 9]
 			},
 			{

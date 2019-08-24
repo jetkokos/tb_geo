@@ -50,7 +50,9 @@ svg text {
 }
 text:hover {
 	display: block;
+	cursor: pointer;
 }
+
 
 
 
