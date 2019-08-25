@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-22718390-3"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-22718390-3');
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<meta charset="UTF-8">
 	<title>Separatist Might</title>
 	<meta name="description" content="">
@@ -141,6 +151,30 @@
 		</div>
 	</div>
 </template>
+<form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
+    <input type="hidden" name="receiver" value="410017861228079">
+    <input type="hidden" name="formcomment" value="SWGoH project Geonosis Territory Battle: Dark Side">
+    <input type="hidden" name="short-dest" value="SWGoH GeoTB:DS">
+    <input type="hidden" name="label" value="$order_id">
+    <input type="hidden" name="quickpay-form" value="donate">
+	<input type="hidden" name="targets" value="Donation">
+	<label for="66">
+		<input type="radio" name="sum" id="66" value="66" data-type="number"> <span>66 &#8381; ~ 1 $</span>	
+	</label> 
+	<label for="330">
+		<input type="radio" name="sum" id="330"value="330" data-type="number" checked> <span>330 &#8381; ~ 5 $</span>	
+	</label> 
+	<label for="660">
+		<input type="radio" name="sum" id="660" value="660" data-type="number"> <span>660 &#8381; ~ 10 $</span>	
+	</label> 
+    <input type="hidden" name="comment" value="">
+    <input type="hidden" name="need-fio" value="false">
+    <input type="hidden" name="need-email" value="false"> 
+    <input type="hidden" name="need-phone" value="false">
+    <input type="hidden" name="need-address" value="false">
+    <input type="hidden" name="paymentType" value="AC" checked>
+    <input type="submit" value="Donate">
+</form>
 <script src="js/vue.js"></script>
 <script src="js/main.js"></script>
 </body>

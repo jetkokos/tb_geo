@@ -123,6 +123,25 @@ text:hover {
 	opacity: 0.9;
 }
 */
+
+form {
+	position: fixed;
+	right: 1%;
+	bottom: 2%;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+}
+form label {
+	cursor: pointer;
+}
+form input[type=submit] {
+	border: none;
+	background-color: lightgrey;
+	color: #000000;
+
+}
+
 /*Mission positions*/
 .c1 {
 	top: 40%;
