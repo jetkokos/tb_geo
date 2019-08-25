@@ -129,8 +129,8 @@
 		<!--v-click-outside="hide"-->
 		<div v-if="seen" class="description" v-bind:class="'desc_' + selectedMission.position">
 			
-			<div class="mb-3">
-				<p class="h4">Preferred teams</p>
+			<div class="mb-3" v-if="selectedMission.preferredSquads">
+				<p  class="h4">Preferred teams</p>
 				<div v-for="item in selectedMission.preferredSquads">
 					<p>{{squads[item].name}}</p>
 					<div class="img_block">
@@ -142,18 +142,33 @@
 				</div>
 			</div>
 			
-			<div class="mb-3">
+			<div class="mb-3" v-if="selectedMission.dangerousEnemies">
 				<p class="h4">Dangerous enemies</p>
-				<li class="text-justify" v-for="item in selectedMission.dangerousEnemies">{{enemies[item]}}</li>
+				<ul>
+					<li class="text-justify" v-for="item in selectedMission.dangerousEnemies">{{enemies[item]}}</li>
+				</ul>
 			</div>
-			<div class="mb-3">
+
+
+
+			<div class="mb-3" v-if="selectedMission.requiredToons">
+				<p  class="h4">Required toons</p>
+				<table>
+					<tr v-for="item in selectedMission.requiredToons">
+						<td v-for="item in platoons[item]">{{item}}</td>
+					</tr>
+				</table>
+			</div>
+
+
+			<div class="rewards mb-3" v-if="selectedMission.rewards">
 				<p class="h4">Rewards</p>
-				<span v-for="item in selectedMission.rewards">&nbsp;&nbsp;{{item}}&nbsp;&nbsp;</span>
+				<span v-for="item in selectedMission.rewards">&nbsp;&nbsp;{{item}}&nbsp;</img>&nbsp;&nbsp;</span>
 			</div>
 		</div>
 	</div>
 </template>
-<form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
+<form method="POST" target="_blank" action="https://money.yandex.ru/quickpay/confirm.xml">
     <input type="hidden" name="receiver" value="410017861228079">
     <input type="hidden" name="formcomment" value="SWGoH project Geonosis Territory Battle: Dark Side">
     <input type="hidden" name="short-dest" value="SWGoH GeoTB:DS">

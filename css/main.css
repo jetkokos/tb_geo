@@ -66,7 +66,7 @@ text:hover {
 	top: 50%;
 	max-width: 40%;
 	min-height: 300px;
-	padding: 0.5rem;
+	padding: 2rem;
 	color: #ffffff;
 	z-index: 100;
 	border-radius: 1%;
@@ -123,23 +123,63 @@ text:hover {
 	opacity: 0.9;
 }
 */
+table {
+	border: 3px solid #ffffff;
+}
+tr:nth-child(5), tr:nth-child(10) {
+	border-bottom: 3px solid #ffffff;
+}
+
+td {
+	padding: 5px;
+	border: 1px solid #ffffff;
+	font-size: 0.7rem;
+}
+ td{
+	 border-right: 3px solid #ffffff;
+ }
+
+.rewards img{
+	width: 4%;
+}
+
 
 form {
 	position: fixed;
-	right: 1%;
-	bottom: 2%;
+	right: 0.3%;
+	bottom: 0.6%;
 	color: #ffffff;
 	display: flex;
 	flex-direction: column;
+	background-color: rgb(35, 48, 67, 0.9);
+	padding: 0.6rem;
+	border-radius: 0.3rem;
+	font-size: 0.9rem;
 }
-form label {
+form label:hover {
+	cursor: pointer;
+	color: #d56a13;
+}
+
+form input[type="radio"] {
 	cursor: pointer;
 }
+
 form input[type=submit] {
 	border: none;
+	outline: none;
 	background-color: lightgrey;
 	color: #000000;
+	border-radius: 1rem;
+	cursor: pointer;
+	
 
+}
+form input[type=submit]:hover {
+	transform: scale(1.05);
+	background-color: #d56a13;
+	transition: 1s all ease;
+	
 }
 
 /*Mission positions*/
