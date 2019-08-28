@@ -29,4 +29,5 @@ Verson 0.53:
 1. Responsive platoons (fix cut off overlay problem)
 2. Donate button smaller
 3. "Bastilla Shan (Dark)" now "Bastilla Shan (Fallen)"
+4. Scroll now usable
 

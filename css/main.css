@@ -4,7 +4,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	overflow: hidden;
 	background-color: #6d7487;
 }
 p {
@@ -378,8 +377,8 @@ form input[type=submit]:hover {
 		right: 0;
 	}
 	.img_block img {
-		max-width: 5%;
-		max-height: 5%;
+	/*	max-width: 5%;
+		max-height: 5%;*/
 		border-radius: 50%;
 		border: 2px solid #ffffff;
 		margin-right: 0.5%;
