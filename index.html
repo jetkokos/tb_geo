@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-
 	<meta charset="UTF-8">
 	<title>Separatist Might</title>
-	<meta name="description" content="">
-	<meta name="keywords" content=" ">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Interactive Geonosis Territory Battle Map SWGoH">
+	<meta name="keywords" content="swgoh, star wars, geonosis, territory, battle, map, tactics, interactive">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="icon" type="image" href="media/favicon/favicon.svg">
 	<meta name="yandex-verification" content="af25ac2eb9e093b1" />
 </head>
-
 <body>
 <div class="wrapper">
 	<div class="container-fluid ">
@@ -140,15 +139,11 @@
 				</ul>
 			</div>
 
-
-
-			<div class="mb-3" v-if="selectedMission.requiredToons">
-				<p  class="h4">Required toons</p>
-				<table>
-					<tr v-for="item in selectedMission.requiredToons">
-						<td v-for="item in platoons[item]">{{item}}</td>
-					</tr>
-				</table>
+			<div class="mb-3 " v-if="selectedMission.requiredToons">
+				<p class="h4">Required toons</p>
+					<div v-for="item in selectedMission.requiredToons" class="row justify-content-center .flex-nowrap">
+							<div class="platoons" v-for="item in platoons[item]">{{item}}</div>
+					</div>
 			</div>
 
 
@@ -167,13 +162,13 @@
     <input type="hidden" name="quickpay-form" value="donate">
 	<input type="hidden" name="targets" value="Donation">
 	<label for="66">
-		<input type="radio" name="sum" id="66" value="66" data-type="number"> <span>66 &#8381; ~ 1 $</span>	
+		<input type="radio" name="sum" id="66" value="66" data-type="number"> <span>1$</span>	
 	</label> 
 	<label for="330">
-		<input type="radio" name="sum" id="330" value="330" data-type="number" checked> <span>330 &#8381; ~ 5 $</span>	
+		<input type="radio" name="sum" id="330" value="330" data-type="number" checked> <span>5$</span>	
 	</label> 
 	<label for="660">
-		<input type="radio" name="sum" id="660" value="660" data-type="number"> <span>660 &#8381; ~ 10 $</span>	
+		<input type="radio" name="sum" id="660" value="660" data-type="number"> <span>10$</span>	
 	</label> 
     <input type="hidden" name="comment" value="">
     <input type="hidden" name="need-fio" value="false">

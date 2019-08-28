@@ -62,20 +62,19 @@ text:hover {
 .description {
 	position: absolute;
 	background-color: rgb(35, 48, 67, 0.9);
-	transform: translate(0, -50%);
+	transform: translate(0, -45%);
 	top: 50%;
-	max-width: 40%;
-	min-height: 300px;
-	padding: 2rem;
+	max-width: 48%;
+	padding: 1rem;
 	color: #ffffff;
 	z-index: 100;
 	border-radius: 1%;
 }
 .desc_left {
-	left: 8%;
+	left: 3%;
 }
 .desc_right {
-	right: 8%;
+	right: 3%;
 }
 .stars_info { 
 	position: absolute;
@@ -88,6 +87,17 @@ text:hover {
 	color: #ffffff;
 	z-index: 100;
 	border-radius: 1%;
+}
+.platoons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 16%;
+	height: auto;
+	padding: 0.2rem;
+	font-size: 0.8rem;
+	line-height: 0.9rem;
+	border: 1px solid white;
 }
 .mission {
 	position: absolute;
@@ -150,11 +160,16 @@ form {
 	bottom: 0.6%;
 	color: #ffffff;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	align-items: center;
 	background-color: rgb(35, 48, 67, 0.9);
 	padding: 0.6rem;
 	border-radius: 0.3rem;
 	font-size: 0.9rem;
+}
+form label {
+	margin-bottom: 0;
+	margin-right: 1%;
 }
 form label:hover {
 	cursor: pointer;
@@ -340,6 +355,12 @@ form input[type=submit]:hover {
 @media (min-width: 1700px) {
 	.map {
 		width: 80vw;
+	}
+}
+@media (max-width: 1200px) {
+	.platoons {
+		font-size: 0.5rem;
+		line-height: 0.6rem;
 	}
 }
 @media screen and (orientation:portrait) {
