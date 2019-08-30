@@ -31,3 +31,5 @@ Verson 0.53:
 3. "Bastilla Shan (Dark)" now "Bastilla Shan (Fallen)"
 4. Scroll now usable
 
+Verson 0.54:
+1. Phase 4 top, added squad with Hound (most preferred)

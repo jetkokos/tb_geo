@@ -86,7 +86,7 @@ Vue.component('mission', {
 			{
 				id: 13,
 				name: 'Chimaera bugs (without Hound\'s Tooth)',
-				toons: ['sun_fac_geonosian_starfighter', 'geonosian_spy_starfighter', 'geonosioan_soldier_starfighter', 'gaunlet_starfighter', 'slave_1' ]
+				toons: ['sun_fac_geonosian_starfighter', 'geonosian_spy_starfighter', 'geonosioan_soldier_starfighter', 'gaunlet_starfighter', 'slave_1']
 			},
 			{
 				id: 14,
@@ -107,7 +107,12 @@ Vue.component('mission', {
 				id: 17,
 				name: 'Executrix without Hound\'s Tooth',
 				toons: ['b28_extinction_class_bomber', 'emperor_shuttle', 'sith_fighter', 'tie_advanced_x1', 'xanadu_blood']
-			}
+			},
+			{
+				id: 18,
+				name: 'Chimaera with Hound\'s Tooth and bugs',
+				toons: ['hounds_tooth', 'geonosian_spy_starfighter', 'geonosioan_soldier_starfighter', 'sun_fac_geonosian_starfighter', 'gaunlet_starfighter', 'slave_1']
+			},
 			
 
 
@@ -646,7 +651,7 @@ Vue.component('mission', {
 			rewards: [
 				'Wave 1: 2 530 000',
 				],
-			preferredSquads: [13],	
+			preferredSquads: [18, 13],	
 			},
 			{
 			id: 18,
