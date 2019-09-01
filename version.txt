@@ -37,3 +37,4 @@ Version 0.54:
 Version 0.55:
 1. Fixed bug with special mission focus icon
 2. Added new focus and platoon icons
+3. Fixed visual bugs with focus

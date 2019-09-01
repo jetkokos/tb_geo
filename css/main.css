@@ -114,13 +114,9 @@ text:hover {
 	background-size: contain;
 }
 
-.mission[src="media/mission_special.svg"], .mission[src="media/mission_platoon.svg"] {
-	background: none;
-}
-.mission[src="media/mission_special.svg"]:hover{
-	background: url('../media/focus.svg') no-repeat;
-	background-size: 90%;
-}
+
+
+
 
 
 .img_block img {

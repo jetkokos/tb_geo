@@ -13,15 +13,15 @@
    id="Слой_1"
    x="0px"
    y="0px"
-   viewBox="0 0 403.10001 403.10001"
+   viewBox="0 0 599 600"
    xml:space="preserve"
    sodipodi:docname="mission_platoon.svg"
-   width="403.10001"
-   height="403.10001"
+   width="599"
+   height="600"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
    id="metadata262"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
    id="defs260" /><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
@@ -35,13 +35,17 @@
    inkscape:window-height="988"
    id="namedview258"
    showgrid="false"
-   inkscape:zoom="0.26906598"
-   inkscape:cx="-219.46019"
-   inkscape:cy="-615.4"
+   inkscape:zoom="0.76103352"
+   inkscape:cx="351.65298"
+   inkscape:cy="121.73208"
    inkscape:window-x="-8"
    inkscape:window-y="-8"
    inkscape:window-maximized="1"
-   inkscape:current-layer="Слой_1" />
+   inkscape:current-layer="Слой_1"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0" />
 <style
    type="text/css"
    id="style2">
@@ -60,17 +64,18 @@
 </style>
 <g
    id="g6"
-   transform="translate(-284.5,734.5)">
+   transform="translate(-184.63581,836.7918)"
+   style="stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000000;stroke-opacity:1">
 	<path
    class="st0"
    d="m 341.3,-333.3 c -16.5,-0.3 -30.6,-5.9 -40.9,-16.2 -10.5,-10.6 -16,-25.3 -15.7,-42.6 l -0.2,-276.7 c 0,-36.2 29.5,-65.7 65.7,-65.7 h 271.7 c 36.2,0 65.7,29.5 65.7,65.7 v 271.7 c 0,36.2 -29.5,65.7 -65.7,65.7 z"
    id="path4"
    inkscape:connector-curvature="0"
-   style="fill:#b31917" />
+   style="fill:#b31917;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000000;stroke-opacity:1" />
 </g>
 <g
    id="g12"
-   transform="translate(-284.5,734.5)">
+   transform="translate(-184.63581,836.7918)">
 	<path
    class="st1"
    d="m 350.2,-376.5 c -11.4,0 -20.7,-9.3 -20.7,-20.7 v -271.6 c 0,-11.4 9.3,-20.7 20.7,-20.7 h 271.7 c 11.4,0 20.7,9.3 20.7,20.7 v 271.7 c 0,11.4 -9.3,20.7 -20.7,20.7 H 350.2 Z"
@@ -84,7 +89,7 @@
 </g>
 <g
    id="g16"
-   transform="translate(-284.5,734.5)">
+   transform="translate(-184.63581,836.7918)">
 	<path
    class="st2"
    d="m 486.5,-682.5 c 39.9,0 77.5,15.6 105.7,43.8 28.2,28.2 43.8,65.8 43.8,105.7 0,39.9 -15.6,77.5 -43.8,105.7 -28.2,28.2 -65.8,43.8 -105.7,43.8 -39.9,0 -77.5,-15.6 -105.7,-43.8 -28.2,-28.2 -43.8,-65.8 -43.8,-105.7 0,-39.9 15.6,-77.5 43.8,-105.7 28.2,-28.2 65.8,-43.8 105.7,-43.8 m 0,-13 c -89.7,0 -162.5,72.8 -162.5,162.5 0,89.7 72.8,162.5 162.5,162.5 89.7,0 162.5,-72.8 162.5,-162.5 0,-89.7 -72.8,-162.5 -162.5,-162.5 z"
@@ -94,7 +99,7 @@
 </g>
 <g
    id="g20"
-   transform="translate(-284.5,734.5)">
+   transform="translate(-184.63581,836.7918)">
 	<path
    class="st2"
    d="m 486.5,-665 c 35.3,0 68.4,13.7 93.3,38.7 24.9,24.9 38.7,58.1 38.7,93.3 0,35.2 -13.7,68.4 -38.7,93.3 -24.9,24.9 -58.1,38.7 -93.3,38.7 -35.2,0 -68.4,-13.7 -93.3,-38.7 -24.9,-24.9 -38.7,-58.1 -38.7,-93.3 0,-35.2 13.7,-68.4 38.7,-93.3 24.9,-25 58,-38.7 93.3,-38.7 m 0,-13 c -80.1,0 -145,64.9 -145,145 0,80.1 64.9,145 145,145 80.1,0 145,-64.9 145,-145 0,-80.1 -64.9,-145 -145,-145 z"
@@ -104,7 +109,7 @@
 </g>
 <g
    id="g24"
-   transform="translate(-284.5,734.5)">
+   transform="translate(-184.63581,836.7918)">
 	<path
    d="m 622.3,-682 c 7.3,0 13.2,5.9 13.2,13.2 v 271.7 c 0,7.3 -5.9,13.2 -13.2,13.2 H 350.7 c -7.3,0 -13.2,-5.9 -13.2,-13.2 v -271.7 c 0,-7.3 5.9,-13.2 13.2,-13.2 h 271.6 m 0,-14 H 350.7 c -15,0 -27.2,12.2 -27.2,27.2 v 271.7 c 0,14.9 12.2,27.2 27.2,27.2 h 271.7 c 14.9,0 27.2,-12.2 27.2,-27.2 v -271.7 c -0.1,-15 -12.3,-27.2 -27.3,-27.2 z"
    id="path22"
@@ -112,7 +117,7 @@
 </g>
 <g
    id="g42"
-   transform="translate(-284.5,734.5)">
+   transform="translate(-184.63581,836.7918)">
 	<g
    id="g28">
 		<rect
@@ -164,7 +169,7 @@
 </g>
 <g
    id="g60"
-   transform="translate(-284.5,734.5)">
+   transform="translate(-184.63581,836.7918)">
 	<g
    id="g46">
 		<rect
@@ -216,7 +221,7 @@
 </g>
 <g
    id="g64"
-   transform="translate(-284.5,734.5)">
+   transform="translate(-184.63581,836.7918)">
 	<ellipse
    class="st2"
    cx="486.5"
@@ -230,7 +235,7 @@
    class="st3"
    id="g174"
    style="display:none"
-   transform="translate(-284.5,734.5)">
+   transform="translate(-284.5,931.39999)">
 	<radialGradient
    id="SVGID_1_"
    cx="671.42072"
@@ -480,7 +485,7 @@
    class="st3"
    id="g226"
    style="display:none"
-   transform="translate(-284.5,734.5)">
+   transform="translate(-284.5,931.39999)">
 	<radialGradient
    id="SVGID_5_"
    cx="303.7305"
@@ -600,7 +605,7 @@
    class="st3"
    id="g255"
    style="display:none"
-   transform="translate(-284.5,734.5)">
+   transform="translate(-284.5,931.39999)">
 	<rect
    x="293"
    y="108"
