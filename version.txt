@@ -31,5 +31,9 @@ Verson 0.53:
 3. "Bastilla Shan (Dark)" now "Bastilla Shan (Fallen)"
 4. Scroll now usable
 
-Verson 0.54:
+Version 0.54:
 1. Phase 4 top, added squad with Hound (most preferred)
+
+Version 0.55:
+1. Fixed bug with special mission focus icon
+2. Added new focus and platoon icons
